@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Solicitud enviada! — Soho Social Weed Club</title>
+  <link rel="shortcut icon" href="assets/images/weed.PNG" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar active" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="assets/images/weed.PNG" alt="Soho Social Weed Club" width="80" class="logohura">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name">Soho Social Weed Club</h1>
+          <p class="title">Solo para miembros</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-link">SOLO ACCESO PARA MIEMBROS</p>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-link">EDAD MÍNIMA 21 AÑOS</p>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-link">NO VENDEMOS NINGUN TIPO DE ESTUPEFACIENTE</p>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <div class="main-content">
+
+      <article class="home active" data-page="home">
+
+        <header>
+          <h2 class="h2 article-title">¡SOLICITUD ENVIADA!</h2>
+        </header>
+
+        <section class="about-text gracias">
+
+          <div class="gracias-card">
+            <div class="gracias-icon">🌿</div>
+            <h3>Bienvenido/a a la comunidad</h3>
+            <p>Tu solicitud de alta se ha recibido correctamente. Te contactaremos a la brevedad para completar el proceso de inscripción.</p>
+            <p>Si tienes cualquier duda, no dudes en escribirnos por WhatsApp.</p>
+            <a href="https://wa.me/34631748348" target="_blank" class="btn-whatsapp">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+              Escribir por WhatsApp
+            </a>
+          </div>
+
+          <div class="gracias-info">
+            <h4>¿Qué pasa ahora?</h4>
+            <ul>
+              <li>📋 Revisaremos tu solicitud en breve</li>
+              <li>📱 Te contactaremos para verificar tus datos</li>
+              <li>🏠 Te invitaremos a conocer nuestras instalaciones</li>
+              <li>🌿 Podrás disfrutar de todos los beneficios de ser socio/a</li>
+            </ul>
+          </div>
+
+          <a href="index.html" class="back-link">← Volver al inicio</a>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- whatsapp -->
+  <button id="toggleButton" class="whatsapp-button">
+    <img id="whatsappLogo" src="assets/images/whatsapp.png" alt="WhatsApp" width="30px">
+    <img id="crossLogo" src="assets/images/cross.png" alt="Cross" style="display: none;" width="15px">
+  </button>
+  <div id="popup" class="popup">
+    <span>¿Tiene dudas sobre el alta o el estado de su membresía? Escríbanos por WhatsApp y le responderemos a la brevedad.</span>
+    <a href="https://wa.me/34631748348" target="_blank">Enviar mensaje de WhatsApp</a>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <style>
+    body { background: hsl(36, 45%, 93%); }
+    .gracias { text-align: center; max-width: 600px; margin: 0 auto; }
+    .gracias-card {
+      background: hsl(36, 45%, 95%);
+      border: 1.5px solid hsl(152, 12%, 75%);
+      border-radius: 4px;
+      padding: 40px 30px;
+      margin-bottom: 24px;
+    }
+    .gracias-icon { font-size: 64px; margin-bottom: 16px; }
+    .gracias-card h3 {
+      color: hsl(152, 55%, 40%) !important;
+      font-size: 22px !important;
+      margin-bottom: 16px;
+    }
+    .gracias-card p {
+      color: hsl(152, 8%, 18%);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .btn-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: hsl(152, 55%, 42%);
+      color: hsl(36, 50%, 95%) !important;
+      border-radius: 4px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+      box-shadow: 0 4px 16px hsla(140, 55%, 42%, 0.35);
+    }
+    .btn-whatsapp:hover {
+      background: hsl(152, 55%, 35%);
+      transform: translateY(-1px);
+    }
+    .btn-whatsapp ion-icon { font-size: 20px; }
+    .gracias-info {
+      background: hsl(36, 45%, 95%);
+      border: 1.5px solid hsl(152, 12%, 75%);
+      border-radius: 4px;
+      padding: 24px 28px;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .gracias-info h4 {
+      color: hsl(152, 55%, 40%) !important;
+      font-size: 16px !important;
+      margin-bottom: 14px;
+    }
+    .gracias-info ul { list-style: none; padding: 0; margin: 0; }
+    .gracias-info ul li {
+      color: hsl(152, 8%, 18%);
+      font-size: 14px;
+      line-height: 1.8;
+      padding-left: 4px;
+    }
+    .back-link {
+      display: inline-block;
+      color: hsl(152, 55%, 42%);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1.5px solid hsl(152, 55%, 42%);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .back-link:hover {
+      color: hsl(152, 55%, 32%);
+      border-color: hsl(152, 55%, 32%);
+    }
+  </style>
+
+</body>
+</html>

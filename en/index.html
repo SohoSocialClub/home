@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soho Social Weed Club</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/weed.PNG" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/spotlight.min.css">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="assets/images/weed.PNG" alt="Richard hanrick" width="80" class="logohura" >
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name">Soho Social Weed Club</h1>
+
+          <p class="title">Solo para miembros</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-link">MEMBERS-ONLY ACCESS</p>
+
+              
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-link">MINIMUM AGE 21</p>
+            </div>
+
+          </li>
+
+          
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-link">WE DO NOT SELL ANY NARCOTICS</p>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+     
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="home  active" data-page="home">
+
+        <header>
+          <h2 class="h2 article-title">FOR MEMBERS</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            We are a private, non-profit association made up of adults who share a responsible, supportive and respectful view of cannabis use.
+Our goal is to offer a safe, regulated and trustworthy space for our members, promoting information, prevention and individual and collective well-being.
+<br>
+
+</p>
+        </section>
+
+
+        
+
+        <!--
+          - testimonials
+        -->
+
+       <section class="contact-form">
+  <h3 class="h3 article-title">PRE-REGISTRATION</h3>
+<section class="about-text"> <p>Welcome to our community. 🌱
+Complete the form below to register as a member. The data you provide will be treated confidentially and used only for internal administrative purposes, in accordance with Organic Law 3/2018 on the Protection of Personal Data and Guarantee of Digital Rights (LOPDGDD) and Regulation (EU) 2016/679 (GDPR).
+
+Your participation helps promote a responsible, safe and respectful cannabis culture.</p> </section>
+ 
+<form action="https://formspree.io/f/xpqnrlea"
+      method="POST"
+      enctype="multipart/form-data"
+      id="altaSocioForm"
+      novalidate>
+
+  <!-- Identification -->
+  <fieldset>
+    <legend>Identification Data</legend>
+
+    <label for="full_name">Full name*</label>
+    <input type="text" id="full_name" name="full_name" class="form-input"
+           placeholder="Your full name" required minlength="3"
+           autocomplete="name" data-form-input>
+
+    <label for="id_number">DNI/NIE/Passport*</label>
+    <input type="text" id="id_number" name="id_number" class="form-input"
+           placeholder="E.g.: 00000000X or X0000000T"
+           required pattern="[A-Za-z0-9\-]{5,20}" inputmode="text" data-form-input>
+
+    <label for="dob">Date of birth* (21+)</label>
+    <input type="date" id="dob" name="dob" class="form-input"
+           required autocomplete="bday" data-form-input>
+
+    <label for="phone">Phone*</label>
+    <input type="tel" id="phone" name="phone" class="form-input"
+           placeholder="+34 600000000"
+           required pattern="^(\+?34)?\s?\d{9}$" inputmode="tel"
+           autocomplete="tel" data-form-input>
+
+    <label for="email">Email*</label>
+    <input type="email" id="email" name="email" class="form-input"
+           placeholder="youremail@example.com" required
+           autocomplete="email" data-form-input>
+ 
+
+  <!-- Address -->
+  <fieldset>
+    <legend>Address</legend>
+
+    <label for="address">Street and number*</label>
+    <input type="text" id="address" name="address" class="form-input"
+           placeholder="C/ Example, 1" required autocomplete="address-line1" data-form-input>
+
+    <label for="city">City*</label>
+    <input type="text" id="city" name="city" class="form-input"
+           placeholder="City" required autocomplete="address-level2" data-form-input>
+
+    <label for="province">Province*</label>
+    <input type="text" id="province" name="province" class="form-input"
+           placeholder="Province" required autocomplete="address-level1" data-form-input>
+
+    <label for="postal_code">Postal code*</label>
+    <input type="text" id="postal_code" name="postal_code" class="form-input"
+           placeholder="28001" required pattern="^\d{5}$"
+           inputmode="numeric" autocomplete="postal-code" data-form-input>
+           <label for="join_date">Join date*</label>
+    <input type="date" id="join_date" name="join_date" class="form-input"
+           required data-form-input>
+
+  </fieldset>
+
+  <!-- Declarations and consents -->
+  <fieldset>
+    <legend>Declarations and consents</legend>
+
+    <ul class="checkbox-list">
+
+      <li class="checkbox-item">
+        <input type="checkbox" name="age_confirm" required>
+        <span>I declare that I am over 21 years old and that my data is truthful.*</span>
+      </li>
+
+      <li class="checkbox-item">
+        <input type="checkbox" name="personal_use" required>
+        <span>I declare that consumption is exclusively personal and that there will be no redistribution to third parties.*</span>
+      </li>
+
+      <li class="checkbox-item">
+        <input type="checkbox" name="statutes_accept" required>
+        <span>I accept the <a href="estatutos.html" target="_blank" rel="noopener">bylaws</a> and internal rules of the club.*</span>
+      </li>
+
+      <li class="checkbox-item">
+        <input type="checkbox" name="fee_agreement" required>
+        <span>I accept the membership fee terms and/or club contributions (if applicable).*</span>
+      </li>
+
+      <li class="checkbox-item">
+        <input type="checkbox" name="gdpr_consent" required>
+        <span>I have read and accept the <a href="politica-privacidad.html" target="_blank" rel="noopener">privacy policy</a> and authorize the processing of my data in accordance with the GDPR.*</span>
+      </li>
+
+    </ul>
+  </fieldset>
+
+  <!-- Signature -->
+  <fieldset>
+    <legend>Signature</legend>
+    <label for="signature">Signature (type your full name)*</label>
+    <input type="text" id="signature" name="signature" class="form-input"
+           required minlength="3" placeholder="Full name" autocomplete="off">
+  </fieldset>
+
+  <!-- Formspree special fields -->
+  <input type="hidden" name="_subject" value="New membership application - MÁLAGA SOCIAL CLUB">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_redirect" value="gracias.html">
+
+  <!-- Honeypot anti-spam -->
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+  <button class="form-btn" type="submit">
+    <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+    <span>Send application</span>
+  </button>
+
+</form>
+
+<script>
+  // Preload join date with today
+  (function () {
+    var join = document.getElementById('join_date');
+    if (join && !join.value) {
+      var today = new Date().toISOString().split('T')[0];
+      join.value = today;
+    }
+  })();
+
+  // Age validation (21+)
+  document.getElementById('altaSocioForm').addEventListener('submit', function (e) {
+    var dobInput = document.getElementById('dob');
+    if (!dobInput || !dobInput.value) return;
+    var dob = new Date(dobInput.value);
+    var today = new Date();
+    var age = today.getFullYear() - dob.getFullYear()
+      - ((today.getMonth() < dob.getMonth()) ||
+         (today.getMonth() === dob.getMonth() && today.getDate() < dob.getDate()) ? 1 : 0);
+    if (age < 21) {
+      e.preventDefault();
+      alert('You must be over 21 years old to register.');
+      dobInput.focus();
+    }
+  });
+</script>
+
+
+<script>
+  // Preload join date with today
+  (function () {
+    const today = new Date().toISOString().split('T')[0];
+    const join = document.querySelector('input[name="join_date"]');
+    if (join && !join.value) join.value = today;
+  })();
+
+  // Age validation (18+)
+  document.getElementById('altaSocioForm').addEventListener('submit', function (e) {
+    const dobInput = this.querySelector('input[name="dob"]');
+    if (!dobInput || !dobInput.value) return; // required already handles it
+    const dob = new Date(dobInput.value);
+    const today = new Date();
+    const age = today.getFullYear() - dob.getFullYear()
+      - ((today.getMonth() < dob.getMonth()) ||
+         (today.getMonth() === dob.getMonth() && today.getDate() < dob.getDate()) ? 1 : 0);
+    if (age < 18) {
+      e.preventDefault();
+      alert('You must be over 18 years old to register.');
+      dobInput.focus();
+    }
+  });
+</script>
+
+</section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+      
+       
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="salas" data-page="salas">
+
+        <header>
+          <h2 class="h2 article-title">Rooms</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Business Website</button>
+            </li>
+<li class="filter-item">
+              <button data-filter-btn>Advanced Website</button>
+</li>
+            <li class="filter-item">
+              <button data-filter-btn>Store</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select Category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Business Website</button>
+              </li>
+<li class="select-item">
+                <button data-select-item>Advanced Website</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Store</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="tienda">
+              <a href="https://mineralplanet.es">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/project-1.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mineral Planet</h3>
+
+                <p class="project-category">Store</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web empresa">
+              <a href="https://changoswing.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Changó Swing</h3>
+
+                <p class="project-category">Business Website</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web empresa">
+              <a href="https://labotigavending.com">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/project-3.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Business Website</h3>
+
+                <p class="project-category">Business Website</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="diseño">
+              <a href="assets/images/project-4.jpeg"  class="spotlight">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/project-4.jpeg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Business Card</h3>
+
+                <p class="project-category">Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="diseño">
+              <a href="assets/images/project-5.png" class="spotlight">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Business Card</h3>
+
+                <p class="project-category">Design</p>
+
+              </a>
+            </li>
+
+           
+
+            <li class="project-item  active" data-filter-item data-category="diseño">
+              <a href="assets/images/project-6.png" class="spotlight">
+        
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+        
+                  <img src="assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+        
+                <h3 class="project-title">Business Card </h3>
+        
+                <p class="project-category">Design</p>
+        
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="diseño">
+              <a href="assets/images/project-7.png" class="spotlight">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Business Card </h3>
+
+                <p class="project-category">Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="diseño">
+              <a href="assets/images/project-8.png" class="spotlight"in >
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/project-8.png" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Business Card </h3>
+
+                <p class="project-category">Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web avanzada">
+              <a href="https://mubasic-test.webflow.io/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Mubasic Sound</h3>
+
+                <p class="project-category">Advanced Website</p>
+
+              </a>
+            </li>
+<li class="project-item  active" data-filter-item data-category="tienda">
+              <a href="https://www.renskincare.com/"  >
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/project-10.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Renskincare</h3>
+
+                <p class="project-category">Store</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web avanzada">
+              <a href="https://newestamericans.com/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="assets/images/project-11.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Advanced Website</p>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contacto" data-page="contacto">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102630.64275888112!2d-4.8649999!3d36.50085085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72d809904dabdf%3A0xe6c9db907b5ecab!2sMarbella%2C%20M%C3%A1laga!5e0!3m2!1sen!2ses!4v1698249576014!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <style>
+  .contact-form label {
+    margin-top: 10px;
+    display: block; /* Each label on its own line */
+  }
+</style>
+
+
+
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--whatsapp -->
+  <button id="toggleButton" class="whatsapp-button">
+    <img id="whatsappLogo" src="assets/images/whatsapp.png" alt="WhatsApp" width="30px">
+    <img id="crossLogo" src="assets/images/cross.png" alt="Cross" style="display: none;" width="15px">
+</button>
+  <button class="flag-button">
+    <a href="../index.html" class="bandera">
+      <img src="assets/images/spain.png" alt="English" width="30px">
+    </a>
+  </button>
+<div id="popup" class="popup">
+    <span>Questions about signing up or your membership status? Write to us on Signal and we’ll reply shortly.</span>
+    <a href="https://wa.me/34631748348" target="_blank">Send WhatsApp message</a>
+</div>
+  
+  <script src="assets/js/spotlight.min.js">
+    
+  </script>
+      <script src="assets/js/script.js"></script>
+  
+  
+  <!--
+    - custom js link
+
+
+  -->
+  <script src="assets/js/spotlight.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
