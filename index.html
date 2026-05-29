@@ -227,6 +227,10 @@ Tu participación contribuye a promover una cultura cannábica responsable, segu
     <input type="text" id="address" name="address" class="form-input"
            placeholder="C/ Ejemplo, 1" required autocomplete="address-line1" data-form-input>
 
+    <label for="country">País*</label>
+    <input type="text" id="country" name="country" class="form-input"
+           placeholder="País" required autocomplete="country-name" data-form-input>
+
     <label for="city">Ciudad*</label>
     <input type="text" id="city" name="city" class="form-input"
            placeholder="Ciudad" required autocomplete="address-level2" data-form-input>
@@ -239,6 +243,7 @@ Tu participación contribuye a promover una cultura cannábica responsable, segu
     <input type="text" id="postal_code" name="postal_code" class="form-input"
            placeholder="28001" required pattern="^\d{5}$"
            inputmode="numeric" autocomplete="postal-code" data-form-input>
+
            <label for="join_date">Fecha de alta*</label>
     <input type="date" id="join_date" name="join_date" class="form-input"
            required data-form-input>
@@ -278,6 +283,76 @@ Tu participación contribuye a promover una cultura cannábica responsable, segu
 
     </ul>
   </fieldset>
+
+  <!-- Documentación -->
+  <fieldset>
+    <legend>Documentación</legend>
+
+    <label for="doc_type">Tipo de documento*</label>
+    <select id="doc_type" name="doc_type" class="form-input" required data-form-input>
+      <option value="" disabled selected>Selecciona tipo</option>
+      <option value="dni">DNI / NIE</option>
+      <option value="passport">Pasaporte</option>
+    </select>
+
+    <div id="dni_fields" style="display:none">
+      <label for="id_front">Foto DNI/NIE (anverso)*</label>
+      <input type="file" id="id_front" name="id_front" class="form-input"
+             accept="image/*,.pdf" data-form-input>
+      <span class="form-hint">Adjunta foto del anverso de tu documento</span>
+
+      <label for="id_back">Foto DNI/NIE (reverso)*</label>
+      <input type="file" id="id_back" name="id_back" class="form-input"
+             accept="image/*,.pdf" data-form-input>
+      <span class="form-hint">Adjunta foto del reverso de tu documento</span>
+    </div>
+
+    <div id="passport_fields" style="display:none">
+      <label for="passport_front">Foto pasaporte*</label>
+      <input type="file" id="passport_front" name="passport_front" class="form-input"
+             accept="image/*,.pdf" data-form-input>
+      <span class="form-hint">Adjunta foto de la página del pasaporte con tus datos</span>
+    </div>
+  </fieldset>
+
+  <script>
+  (function () {
+    var docType = document.getElementById('doc_type');
+    var dniFields = document.getElementById('dni_fields');
+    var passportFields = document.getElementById('passport_fields');
+    var idFront = document.getElementById('id_front');
+    var idBack = document.getElementById('id_back');
+    var passportFront = document.getElementById('passport_front');
+
+    function toggleDocFields() {
+      var type = docType.value;
+      if (type === 'dni') {
+        dniFields.style.display = 'block';
+        passportFields.style.display = 'none';
+        idFront.required = true;
+        idBack.required = true;
+        passportFront.required = false;
+        passportFront.value = '';
+      } else if (type === 'passport') {
+        dniFields.style.display = 'none';
+        passportFields.style.display = 'block';
+        idFront.required = false;
+        idBack.required = false;
+        idFront.value = '';
+        idBack.value = '';
+        passportFront.required = true;
+      } else {
+        dniFields.style.display = 'none';
+        passportFields.style.display = 'none';
+        idFront.required = false;
+        idBack.required = false;
+        passportFront.required = false;
+      }
+    }
+
+    docType.addEventListener('change', toggleDocFields);
+  })();
+  </script>
 
   <!-- Firma -->
   <fieldset>

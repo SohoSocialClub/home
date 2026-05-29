@@ -227,6 +227,10 @@ Your participation helps promote a responsible, safe and respectful cannabis cul
     <input type="text" id="address" name="address" class="form-input"
            placeholder="C/ Example, 1" required autocomplete="address-line1" data-form-input>
 
+    <label for="country">Country*</label>
+    <input type="text" id="country" name="country" class="form-input"
+           placeholder="Country" required autocomplete="country-name" data-form-input>
+
     <label for="city">City*</label>
     <input type="text" id="city" name="city" class="form-input"
            placeholder="City" required autocomplete="address-level2" data-form-input>
@@ -239,6 +243,8 @@ Your participation helps promote a responsible, safe and respectful cannabis cul
     <input type="text" id="postal_code" name="postal_code" class="form-input"
            placeholder="28001" required pattern="^\d{5}$"
            inputmode="numeric" autocomplete="postal-code" data-form-input>
+
+
            <label for="join_date">Join date*</label>
     <input type="date" id="join_date" name="join_date" class="form-input"
            required data-form-input>
@@ -278,6 +284,76 @@ Your participation helps promote a responsible, safe and respectful cannabis cul
 
     </ul>
   </fieldset>
+
+  <!-- Documentation -->
+  <fieldset>
+    <legend>Documentation</legend>
+
+    <label for="doc_type">Document type*</label>
+    <select id="doc_type" name="doc_type" class="form-input" required data-form-input>
+      <option value="" disabled selected>Select type</option>
+      <option value="dni">ID Card / NIE</option>
+      <option value="passport">Passport</option>
+    </select>
+
+    <div id="dni_fields" style="display:none">
+      <label for="id_front">ID document (front)*</label>
+      <input type="file" id="id_front" name="id_front" class="form-input"
+             accept="image/*,.pdf" data-form-input>
+      <span class="form-hint">Upload a photo of the front of your ID</span>
+
+      <label for="id_back">ID document (back)*</label>
+      <input type="file" id="id_back" name="id_back" class="form-input"
+             accept="image/*,.pdf" data-form-input>
+      <span class="form-hint">Upload a photo of the back of your ID</span>
+    </div>
+
+    <div id="passport_fields" style="display:none">
+      <label for="passport_front">Passport photo*</label>
+      <input type="file" id="passport_front" name="passport_front" class="form-input"
+             accept="image/*,.pdf" data-form-input>
+      <span class="form-hint">Upload a photo of the passport page with your details</span>
+    </div>
+  </fieldset>
+
+  <script>
+  (function () {
+    var docType = document.getElementById('doc_type');
+    var dniFields = document.getElementById('dni_fields');
+    var passportFields = document.getElementById('passport_fields');
+    var idFront = document.getElementById('id_front');
+    var idBack = document.getElementById('id_back');
+    var passportFront = document.getElementById('passport_front');
+
+    function toggleDocFields() {
+      var type = docType.value;
+      if (type === 'dni') {
+        dniFields.style.display = 'block';
+        passportFields.style.display = 'none';
+        idFront.required = true;
+        idBack.required = true;
+        passportFront.required = false;
+        passportFront.value = '';
+      } else if (type === 'passport') {
+        dniFields.style.display = 'none';
+        passportFields.style.display = 'block';
+        idFront.required = false;
+        idBack.required = false;
+        idFront.value = '';
+        idBack.value = '';
+        passportFront.required = true;
+      } else {
+        dniFields.style.display = 'none';
+        passportFields.style.display = 'none';
+        idFront.required = false;
+        idBack.required = false;
+        passportFront.required = false;
+      }
+    }
+
+    docType.addEventListener('change', toggleDocFields);
+  })();
+  </script>
 
   <!-- Signature -->
   <fieldset>
