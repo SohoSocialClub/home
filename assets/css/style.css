@@ -1909,7 +1909,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Botón de idioma (bandera) */
 .flag-button {
   position: fixed;
-  bottom: 90px;
+  bottom: 20px;
   right: 20px;
   background: none;
   border: none;
